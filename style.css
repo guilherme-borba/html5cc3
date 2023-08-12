@@ -1,7 +1,26 @@
+/* CSS reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Importação Google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+  body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
 /* Smartphone Landscape */
 @media (min-width: 576px){
     body{
         background-color: #0ff;
+    }
+    /* Layout */
+    .Container{
+        max-width: 540px;  
+        background-color: #7f0; 
     }
 }
 
@@ -10,6 +29,10 @@
     body{
         background-color: yellow;
     }
+    /* Layout */
+    .Container{
+        max-width: 720px;   
+    }
 }
 
 /* Tablet Landscape */
@@ -17,11 +40,19 @@
     body{
         background-color: orange;
     }
+    /* Layout */
+    .Container{
+        max-width: 960px;   
+    }
 }
 
 /* PC */
 @media (min-width: 1200px){
     body{
         background-color: red;
+    }
+    /* Layout */
+    .Container{
+        max-width: 1140px;   
     }
 }
